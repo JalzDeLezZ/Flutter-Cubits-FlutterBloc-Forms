@@ -1,7 +1,7 @@
 <header>
   <p align="center">
     <a href="https://flutter.dev/" target="blank"><img src="https://storage.googleapis.com/cms-storage-bucket/ec64036b4eacc9f3fd73.svg" width="90" alt="Nest Logo" /></a>
-    <h2 align="center">Cinema Movie</h2>
+    <h2 align="center">Cubits - FlutterBloc - Forms</h2>
   </p>
   <section align="center">
   <a href="#"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
