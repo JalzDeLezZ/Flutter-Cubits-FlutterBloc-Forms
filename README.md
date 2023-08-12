@@ -25,6 +25,7 @@
 
 ## Dependences
 [• go_router](https://pub.dev/packages/go_router)
+[• flutter_bloc](https://pub.dev/packages/flutter_bloc)
 
 
 
