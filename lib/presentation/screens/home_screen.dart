@@ -16,7 +16,7 @@ class HomeScreen extends StatelessWidget {
               onTap: () => context.push('/cubits')),
           ListTile(
               title: const Text('BLoC'),
-              subtitle: const Text('BLoC example'),
+              subtitle: const Text('BLoC composite state manager example'),
               trailing: const Icon(Icons.arrow_forward_ios),
               onTap: () => context.push('/bloc'))
         ],
