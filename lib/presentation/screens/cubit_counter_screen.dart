@@ -1,3 +1,5 @@
+// ignore_for_file: avoid_print
+
 import 'package:fbloc_cubits_forms/presentation/blocs/counter_cubit/counter_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -19,6 +21,7 @@ class _CubitCounterView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    //? 1st way to get state
     final counterState = context.watch<CounterCubit>().state;
     return Scaffold(
       appBar: AppBar(
@@ -34,7 +37,24 @@ class _CubitCounterView extends StatelessWidget {
       body: BlocBuilder<CounterCubit, CounterState>(
         // buildWhen: (previous, current) => previous.counter != current.counter,
         builder: (context, state) {
-          return Text('Counter: ${state.counter}');
+          print('Counter Changed');
+          return ListView(
+            children: [
+              const SizedBox(height: 24),
+              Center(
+                child: Text(
+                  '${state.counter}',
+                  style: const TextStyle(fontSize: 200),
+                ),
+              ),
+              const SizedBox(height: 24),
+              Center(
+                  child: context.select((CounterCubit value) => Text(
+                        '${value.state.counter}',
+                        style: const TextStyle(fontSize: 200),
+                      ))),
+            ],
+          );
         },
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
