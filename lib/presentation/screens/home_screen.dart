@@ -18,7 +18,16 @@ class HomeScreen extends StatelessWidget {
               title: const Text('BLoC'),
               subtitle: const Text('BLoC composite state manager example'),
               trailing: const Icon(Icons.arrow_forward_ios),
-              onTap: () => context.push('/bloc'))
+              onTap: () => context.push('/bloc')),
+          const Padding(
+            padding: EdgeInsets.symmetric(horizontal: 10),
+            child: Divider(),
+          ),
+          ListTile(
+              title: const Text('New User'),
+              subtitle: const Text('User management example'),
+              trailing: const Icon(Icons.arrow_forward_ios),
+              onTap: () => context.push('/new-user')),
         ],
       ),
     );
