@@ -55,44 +55,19 @@ class _RegisterForm extends StatelessWidget {
           CustomTextFormFiel(
             label: 'Username',
             onChanged: registerCubit.usernameChanged,
-            errorText: username.isPure || username.isValid
-                ? null
-                : 'Username not valid',
+            errorText: username.errorMessage,
           ),
           const SizedBox(height: 20),
           CustomTextFormFiel(
             label: 'Email',
-            onChanged: (value) {
-              registerCubit.emailChanged(value);
-            },
-            validator: (value) {
-              if (value == null || value.trim().isEmpty || value.isEmpty) {
-                return 'Username is required';
-              }
-              final emailRegExp = RegExp(
-                r'^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$',
-              );
-              if (!emailRegExp.hasMatch(value)) {
-                return 'Please enter a valid email address';
-              }
-              return null;
-            },
+            onChanged: registerCubit.emailChanged,
           ),
           const SizedBox(height: 20),
           CustomTextFormFiel(
             label: 'Password',
             obscureText: true,
-            onChanged: (value) {
-              registerCubit.passwordChanged(value);
-            },
-            validator: (value) {
-              if (value == null || value.isEmpty) {
-                return 'Username is required';
-              } else if (value.length < 6) {
-                return 'Username must be at least 6 characters';
-              }
-              return null;
-            },
+            onChanged: registerCubit.passwordChanged,
+            errorText: password.errorMessage,
           ),
           const SizedBox(height: 20),
           FilledButton.tonalIcon(
