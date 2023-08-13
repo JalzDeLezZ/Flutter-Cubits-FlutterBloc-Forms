@@ -36,6 +36,8 @@
 ## Code Helpers
 
 ```bash
+# Run flutter without logs
+flutter run | grep -v "app_time_stats"
 # Modify the most recent commit message
 $ git commit --amend -m "an updated commit message"
 ```
