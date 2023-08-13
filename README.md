@@ -6,7 +6,7 @@
   <section align="center">
   <a href="#"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
   <a href="#"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="#"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Followers"></a>
+  <a href="#"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=134%20Followers"></a>
   </section>
 </header>
 <hr/><br/>
@@ -16,65 +16,39 @@
 ## Development
 
 ```bash
-# Implementations
-1. flutter run
+# Run flutter without logs
+flutter run | grep -v "app_time_stats"
 ```
 
-<br/>
-<hr/>
+<br/><hr/>
 
 ## Dependences
 [• go_router](https://pub.dev/packages/go_router)
 [• flutter_bloc](https://pub.dev/packages/flutter_bloc)
 [• equatable](https://pub.dev/packages/equatable)
+[• formz](https://pub.dev/packages/formz)
 
 
+<br/><hr/>
 
-<br/>
-<hr/>
+## Utils
 
-## Code Helpers
+[• QuickType](https://app.quicktype.io/)
 
-```bash
-# Run flutter without logs
-flutter run | grep -v "app_time_stats"
-# Modify the most recent commit message
-$ git commit --amend -m "an updated commit message"
-```
-
-<hr/>
-
+<br/><hr/>
 
 ## Others
 
 <details><summary>Documentation</summary>
 <ul>
-  <li><a href="https://docs.flutter.dev/" target="_blank">Flutter</a></li>
+  <li><a href="https://devtalles.com/files/dart-cheat-sheet.pdf" target="_blank">Notes Dart</a></li>
+  <li><a href="https://devtalles.com/files/flutter-cheat-sheet.pdf" target="_blank">Notes Flutter</a></li>
+  <li><a href="https://pub.dev/packages/shared_preferences" target="_blank">Storage</a></li>
+  <li><a href="https://isar.dev/es/" target="_blank">Isar DB</a></li>
 </ul>
 </details><br/>
 
-<details><summary>Bash Commands</summary>
-
-```bash
-# Init Empty Project
-$ flutter create <project_name>
-```
-</details><br/>
-
-<hr/>
-
-## Utils
-
-[• Notes Dart](https://devtalles.com/files/dart-cheat-sheet.pdf)
-
-[• Notes Flutter](https://devtalles.com/files/flutter-cheat-sheet.pdf)
-
-[• QuickType](https://app.quicktype.io/)
-
-[• Storage](https://pub.dev/packages/shared_preferences)
-[• Isar DB](https://isar.dev/es/)
-
-<hr/>
+<br/><hr/>
 
 ## Support
 
