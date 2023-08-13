@@ -49,6 +49,7 @@ class _RegisterForm extends StatelessWidget {
     final registerCubit = context.watch<RegisterCubit>();
     final username = registerCubit.state.username;
     final password = registerCubit.state.password;
+    final email = registerCubit.state.email;
 
     return Form(
         child: Column(children: [
@@ -61,6 +62,7 @@ class _RegisterForm extends StatelessWidget {
           CustomTextFormFiel(
             label: 'Email',
             onChanged: registerCubit.emailChanged,
+            errorText: email.errorMessage,
           ),
           const SizedBox(height: 20),
           CustomTextFormFiel(
